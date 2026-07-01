@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --bg-main: #fcfcfd;
+    --primary: #5865F2;
+    --primary-dark: #4752C4;
+    --secondary: #EB459E;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --border: #eef2f6;
+    --dot-color: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Climate Crisis', sans-serif;
+    line-height: 1.1;
+    word-wrap: break-word;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 80px;
+    background-color: #000000;
+    border-bottom: 1px solid #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 38px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.btn-pill {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 32px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.btn-pill:hover {
+    background-color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 40px;
+    background-color: #f0f4ff;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 32px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    color: var(--text-dark);
+    max-width: 1000px;
+    margin-bottom: 24px;
+    line-height: 1.0;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin-bottom: 56px;
+    font-weight: 400;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.btn-cta {
+    background-color: #000000;
+    color: white;
+    padding: 20px 48px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-cta:hover {
+    background-color: #333333;
+}
+
+.link-action {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Floating Cards Simplified */
+.floating-card {
+    position: absolute;
+    width: 320px;
+    background-color: #ffffff;
+    padding: 14px;
+    border-radius: 36px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.floating-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 24px;
+    background-color: #f8faff;
+}
+
+.card-label {
+    display: none;
+}
+
+.card-left {
+    left: 40px;
+    top: 50%;
+}
+
+.card-right {
+    right: 40px;
+    bottom: 15%;
+}
+
+
+/* Integrated Logos */
+.integrated {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.integrated p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.logo-strip {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Main Footer */
+.main-footer {
+    padding: 100px 80px 40px;
+    background-color: #000000;
+    border-top: 1px solid #333333;
+    color: #ffffff;
+}
+
+.main-footer .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+.footer-brand .logo {
+    margin-bottom: 24px;
+}
+
+.footer-brand p {
+    color: #cccccc;
+    font-size: 1rem;
+    max-width: 320px;
+    line-height: 1.6;
+}
+
+.footer-brand .logo-text {
+    color: #ffffff;
+}
+
+.footer-links h4 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 32px;
+    font-weight: 800;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    border-top: 1px solid #333333;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #999999;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
